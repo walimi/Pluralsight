@@ -1,7 +1,7 @@
 
 // below is an example of IIFE (immediatly invoked function expression)
 
-function () {
+(function () {
 
 	var createWorker = function () {
 		
@@ -32,4 +32,4 @@ function () {
 	worker.job1();
 	worker.job2();
 
-}(); 
+}()); 
