@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="mainApp">
 
   <head>
     <script src="https://code.angularjs.org/1.2.25/angular.min.js"></script>
@@ -8,6 +8,13 @@
 
   <body ng-controller="MainController">
     <h1>{{messasge}}</h1>
+      <div>
+        <div>First Name: {{person.firstName}}</div>
+        <div>Last Name: {{person.lastName}} </div>  
+          <div>
+            <img ng-src="{{person.imageSrc}}" title="{{person.FirstName}} {{person.lastName}}"
+          </div>
+      </div>
   </body>
 
 </html>

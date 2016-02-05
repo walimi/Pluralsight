@@ -1,6 +1,18 @@
-console.log("Hello world");
+(function(){
 
-var MainController = function($scope) {
+    var app = angular.module("mainApp");
     
-    $scope.message = "Hello, Angular!"; 
-};
+    var MainController = function($scope) {
+
+        var person = {
+            firstName: "Wahid",
+            lastName: "Alimi",
+            imageSrc: "https://pbs.twimg.com/profile_banners/21834725/1408550581/1500x500"
+        };
+
+        $scope.message = "Hello, Angular!"; 
+        $scope.person = person;
+    };
+    
+    app.controller = MainController; 
+}());
