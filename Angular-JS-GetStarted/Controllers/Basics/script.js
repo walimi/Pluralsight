@@ -1,8 +1,4 @@
-(function(){
-
-    var app = angular.module("mainApp");
-    
-    var MainController = function($scope) {
+var MainController = function($scope) {
 
         var person = {
             firstName: "Wahid",
@@ -14,5 +10,3 @@
         $scope.person = person;
     };
     
-    app.controller = MainController; 
-}());
