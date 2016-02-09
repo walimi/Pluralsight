@@ -4,9 +4,13 @@ var MainController = function($scope, $http) {
         $scope.user = response.data;
         
     };
+    
+    var onError = function (reason) {}
+        $scope.error = "Could not fetch the user.";
+    ;
         
-    $http.get("https://api.github.com/users/walimi")
-         .then(onUserComplete);
+    $http.get("https://ap.github.com/users/walimi")
+         .then(onUserComplete, onError);
     
     $scope.message = "Hello, Angular!"; 
 };
