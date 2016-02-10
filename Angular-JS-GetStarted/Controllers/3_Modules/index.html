@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="githubViewer">
+
+  <head>
+    <script src="https://code.angularjs.org/1.2.25/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="MainController">
+    <h1>{{messasge}}</h1>
+      <div>
+        <div>{{error}}</div>
+        <div>Name: {{user.name}}</div>
+        <div>Location: {{user.location}} </div>  
+          <div>
+            <img ng-src="{{user.avatar_url}}" title="{{user.name}}">
+          </div>
+      </div>
+  </body>
+
+</html>
