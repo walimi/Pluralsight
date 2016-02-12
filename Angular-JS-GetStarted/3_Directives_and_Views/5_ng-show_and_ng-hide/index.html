@@ -16,18 +16,21 @@
             <input type="submit" value="Search" />  
           </form>
         
-        <div>
+        <div ng-show="user">
             <h2>{{user.name}}</h2>
-            <img ng-src="{{user.avatar_url}}" title="{{user.name}}">    
-        </div>
-          Order:
+            <img ng-src="{{user.avatar_url}}" title="{{user.name}}">  
+            
+            Order:
           
           <select ng-model="repoSortOrder">
             <option value="+name">Name - Ascending</option>
             <option value="-stargazers_count">Stars - Descending</option>
             <option value="+language">Language - Ascending</option>  
           </select>
-          <table>
+            
+        </div>
+          
+          <table ng-show="user">
             <thead>
                 <th>Name</th>
                 <th>Stars</th>
