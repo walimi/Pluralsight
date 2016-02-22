@@ -33,6 +33,10 @@ select, textarea {
     display: none;
 }
 
+.blue {
+    color: blue;
+}
+
 .sessionThumbnail {
     height:100%;
     overflow: hidden;
