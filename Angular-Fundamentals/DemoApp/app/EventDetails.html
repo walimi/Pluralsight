@@ -22,7 +22,11 @@
 						<h2 ng-class="myclass" ng-bind-template="{{event.name}} {{event.date}}"></h2>
 					</div>
 				</div>
-				<div ng-bind-html="snippet">some title</div>
+
+				<button class="btn" ng-disabled="buttonDisabled">Disabled</button>
+
+				<!--<div ng-bind-html-unsafe="snippet">some title</div>-->
+				<!--<div ng-bind-html="snippet">some title</div>-->
 				<div class="row">
 					<div class="span3">
 						<div><strong>Date:</strong> {{event.date}} </div>
