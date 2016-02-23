@@ -8,7 +8,7 @@ eventsApp.controller('EventController',
 		//$scope.myclass = "blue";
 		//$scope.buttonDisabled = true;
 
-		$scope.sortOrder = '-upVoteCount';
+		$scope.sortOrder = 'name';
 
 		$scope.event = {
 			name: 'Angular Boot Camp',
