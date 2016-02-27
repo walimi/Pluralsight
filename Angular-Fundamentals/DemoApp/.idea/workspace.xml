@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/app/js/controllers/EventController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventDetails.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EventDetails.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/EventDetails.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.153847">
-              <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.4191063">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -73,16 +73,6 @@
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/data/event/2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -117,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventDataService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EventDataService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/services/EventDataService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.048433047">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2" column="125" selection-start-line="2" selection-start-column="125" selection-end-line="2" selection-end-column="125" />
               <folding />
             </state>
@@ -149,11 +139,11 @@
         <option value="$PROJECT_DIR$/scripts/eventsController.js" />
         <option value="$PROJECT_DIR$/app/js/services/EventData.js" />
         <option value="$PROJECT_DIR$/app/js/app.js" />
-        <option value="$PROJECT_DIR$/app/EventDetails.html" />
-        <option value="$PROJECT_DIR$/app/js/controllers/EventController.js" />
         <option value="$PROJECT_DIR$/app/NewEvent.html" />
         <option value="$PROJECT_DIR$/app/js/controllers/EditEventController.js" />
         <option value="$PROJECT_DIR$/app/js/services/EventDataService.js" />
+        <option value="$PROJECT_DIR$/app/js/controllers/EventController.js" />
+        <option value="$PROJECT_DIR$/app/EventDetails.html" />
       </list>
     </option>
   </component>
@@ -572,14 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/event/1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/data/event/2.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -614,24 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/EventDetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.153847">
-          <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers/EventController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/NewEvent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.115385">
@@ -658,11 +622,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/event/1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/services/EventDataService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048433047">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="125" selection-start-line="2" selection-start-column="125" selection-end-line="2" selection-end-column="125" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/EventController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/EventDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4191063">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
