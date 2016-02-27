@@ -5,10 +5,9 @@ eventsApp.controller('EditEventController',
         $scope.saveEvent = function(event, newEventForm) {
             if(newEventForm.$valid) {
                 eventDataService.save(event)
-                    .$promise.then(
-                        function(response) { console.log('success', response); },
-                        function(response) { console.log('failure', response); }
-                    );
+                    .$promise
+                    .then(function(response) { console.log('success', response); })
+                    .catch(function(response) { console.log('failure', response); });
             }
         };
 
