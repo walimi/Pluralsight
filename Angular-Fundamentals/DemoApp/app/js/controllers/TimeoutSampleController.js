@@ -6,8 +6,12 @@
 
 eventsApp.controller('TimeoutSampleController',
     function TimeoutSampleController($scope, $timeout) {
-        var promise = $timeout(function(){
+        setTimeout(function(){
             $scope.name = "John Doe";
         }, 3000);
+
+        $scope.cancel= function() {
+            $timeout.cancel(promise);
+        };
     }
 );
