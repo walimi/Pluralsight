@@ -20,6 +20,11 @@ eventsApp.controller('CompileSampleController',
 
         console.log(getter(context2, context1)); // in this case context1 is the local context and will overwrite context2
 
+        var setter = getter.assign;
+        setter(context2, 'Code Retreat');
+
+        console.log(context2.event.name);
+
         $scope.appendDivToElement = function (markup) {
             return $compile(markup) ($scope).appendTo(angular.element("#appendHere"));
         };
