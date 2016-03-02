@@ -9,12 +9,13 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
             });
         $routeProvider.when('/events',
             {
-               templateUrl: 'templates/EventList.html',
+                templateUrl: 'templates/EventList.html',
                 controller: 'EventListController'
             });
         $routeProvider.when('/event/:eventId',
             {
-               templateUrl: 'templates/EventDetails.html',
+                foo: 'bar',
+                templateUrl: 'templates/EventDetails.html',
                 controller: 'EventController'
             });
         $routeProvider.otherwise({redirectTo: '/events'});
