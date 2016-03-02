@@ -1,9 +1,9 @@
 'use strict'; 
 
 eventsApp.controller('EventController', 
-	function EventController($scope, eventDataService, $anchorScroll) {
+	function EventController($scope, eventData, $anchorScroll) {
 		$scope.sortOrder = 'name';
-		$scope.event = eventDataService.getEvent()
+		$scope.event = eventData.getEvent()
 			.$promise
 			.then(function(event) { $scope.event = event; console.log(event); })
 			.catch(function(response) { console.log(response); }); // catch is for handling errors
