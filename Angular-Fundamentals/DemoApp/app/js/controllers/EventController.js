@@ -5,7 +5,9 @@ eventsApp.controller('EventController',
 		$scope.sortOrder = 'name';
 		$scope.event = eventData.getEvent($routeParams.eventId);
 		console.log($route.current.pathParams.eventId);
-
+		$scope.reload = function() {
+			$route.reload();
+		};
 
 
 		$scope.upVoteSession = function (session) {
