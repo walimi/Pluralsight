@@ -3,7 +3,7 @@
 eventsApp.controller('EventController', 
 	function EventController($scope, eventData, $routeParams, $route) {
 		$scope.sortOrder = 'name';
-		$scope.event = $route.current.locals.event; 
+		$scope.event = $route.current.locals.event;
 
 
 		$scope.upVoteSession = function (session) {
