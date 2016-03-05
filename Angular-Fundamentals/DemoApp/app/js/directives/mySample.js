@@ -8,7 +8,7 @@ eventsApp.directive('mySample', function($compile){
         restrict: 'C',
         template: "<input type='text' ng-model='sampleData' /> {{sampleData}} <br />",
         scope: {
-            
+
         }
     };
 });
