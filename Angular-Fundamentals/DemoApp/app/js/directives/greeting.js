@@ -23,7 +23,8 @@ eventsApp
         return {
             restrict: 'A',
             require: 'greeting',
-            priority: 2,
+            priority: 1,
+            terminal: true,
             link: function(scope, element, attrs, controller) {
                 controller.addGreeting('hei');
             }
@@ -33,7 +34,7 @@ eventsApp
         return {
             restrict: 'A',
             require: 'greeting',
-            priority: 1,
+            priority: 2,
             link: function(scope, element, attrs, controller) {
                 controller.addGreeting('merhaba');
             }
