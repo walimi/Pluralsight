@@ -3,9 +3,9 @@
  */
 eventsApp.directive('repeatX', function($compile) {
     return {
-        link: function(scope, element, attributes, controller) {
+        compile: function(element, attributes) {
             for (var i=0; i < Number(attributes.repeatX)-1; i++) {
-                element.after($compile(element.clone().attr('repeat-x', 0))(scope));
+                element.after(element.clone().attr('repeat-x', 0));
             }
         }
     };
