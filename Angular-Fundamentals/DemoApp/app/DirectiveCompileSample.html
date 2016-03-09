@@ -7,7 +7,8 @@
 </head>
 <body>
 
-<div repeat-x="5">Hello</div>
+Text to repeat: <input type="text" ng-model="text" />
+<div repeat-x="5">{{text}}</div>
 
 <script src="/lib/jquery.min.js"></script>
 <script src="/lib/angular/angular.js"></script>
