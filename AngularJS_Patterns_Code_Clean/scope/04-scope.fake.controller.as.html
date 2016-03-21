@@ -24,8 +24,8 @@
 			.controller('Shell', Shell)
 			.controller('Customer', Customer);
 
-		Shell.$inject = ['$scope', 'msgservice'];
-		function Shell($scope, msgservice) {
+		Shell.$inject = ['$scope'];
+		function Shell($scope) {
 			$scope.vm = this;
 			$scope.vm.title = 'shell title';
 		}
