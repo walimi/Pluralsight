@@ -21,6 +21,13 @@
                     controller: 'Dashboard',
                     controllerAs: 'vm',
                     title: 'dashboard',
+                    resolve: {
+
+                        message: function() {
+                            toastr.warning('You resolved');
+                            return { first: 'secret' };
+                        }
+                    },
                     settings: {
                         nav: 1,
                         content: '<i class="fa fa-dashboard"></i> Dashboard'
