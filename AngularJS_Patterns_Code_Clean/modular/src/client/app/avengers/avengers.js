@@ -5,7 +5,6 @@
         .module('app.avengers')
         .controller('Avengers', Avengers);
 
-    /* @ngInject */
     function Avengers(dataservice, logger) {
         /*jshint validthis: true */
         var vm = this;

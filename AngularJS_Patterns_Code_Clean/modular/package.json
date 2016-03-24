@@ -1,15 +1,15 @@
 {
-  "name": "AngularJS-Modular-Demo",
+  "name": "angular_module_demo",
   "version": "0.0.1",
   "description": "AngularJS Modular Demo",
   "authors": [
-    "John Papa"
+    "Wahid Alimi"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/johnpapa/ng-demos",
+  "homepage": "https://github.com/walimi/Pluralsight/tree/master/AngularJS_Patterns_Code_Clean",
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnpapa/ng-demos.git"
+    "url": "git+https://github.com/walimi/Pluralsight.git"
   },
   "scripts": {
     "init": "npm install",
@@ -35,7 +35,7 @@
     "debug": "^0.8.1",
     "del": "^0.1.3",
     "glob": "^4.0.5",
-    "gulp": "^3.8.10",
+    "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^1.3.0",
     "gulp-autoprefixer": "0.0.10",
     "gulp-bytediff": "^0.2.0",
@@ -45,12 +45,12 @@
     "gulp-imagemin": "^1.0.1",
     "gulp-inject": "^1.0.1",
     "gulp-jscs": "^1.1.2",
-    "gulp-jshint": "^1.7.1",
+    "gulp-jshint": "^2.0.0",
     "gulp-load-plugins": "^0.6.0",
     "gulp-load-utils": "^0.0.4",
     "gulp-minify-css": "^0.3.7",
     "gulp-minify-html": "^0.1.4",
-    "gulp-ng-annotate": "^0.3.2",
+    "gulp-ng-annotate": "^2.0.0",
     "gulp-nodemon": "^1.0.4",
     "gulp-notify": "^1.6.0",
     "gulp-plumber": "^0.6.4",
@@ -60,6 +60,7 @@
     "gulp-task-listing": "^0.3.0",
     "gulp-uglify": "^1.0.1",
     "gulp-util": "^3.0.1",
+    "jshint": "^2.9.1",
     "jshint-stylish": "^0.4.0",
     "karma": "^0.12.23",
     "karma-chai": "^0.1.0",
@@ -81,5 +82,14 @@
     "q": "^1.0.1",
     "sinon": "^1.10.3",
     "sinon-chai": "^2.5.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/walimi/pluralsight/issues"
+  },
+  "main": "gulpfile.js",
+  "keywords": [
+    "angular",
+    "gulp"
+  ],
+  "author": "Wahid Alimi"
 }
