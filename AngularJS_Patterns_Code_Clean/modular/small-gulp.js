@@ -16,3 +16,10 @@ gulp.task('ngAnnotateTest', function() {
         .pipe(plug.uglify({mangle: true}))
         .pipe(gulp.dest('./build'));
 });
+
+gulp.task('hint', function() {
+    return gulp
+        .src(source)
+        .pipe(plug.jshint('./.jshintrc'))
+        .pipe(plug.jshint.reporter('jshint-stylish'));
+});
