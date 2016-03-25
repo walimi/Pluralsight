@@ -23,3 +23,11 @@ gulp.task('hint', function() {
         .pipe(plug.jshint('./.jshintrc'))
         .pipe(plug.jshint.reporter('jshint-stylish'));
 });
+
+gulp.task('watch', function() {
+    return gulp
+        .watch(source, ['hint'])
+        .on('change', function(event) {
+           console.log('*** File' + event.path + ' was ' + event.type + ', running tasks...' );
+        });
+});
