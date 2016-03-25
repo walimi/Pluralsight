@@ -13,5 +13,6 @@ gulp.task('ngAnnotateTest', function() {
         .src(source)
         .pipe(plug.ngAnnotate({add: true, single_quotes: true}))
         .pipe(plug.rename({suffix:'.annotated'}))
+        .pipe(plug.uglify({mangle: true}))
         .pipe(gulp.dest('./build'));
 });
