@@ -11,13 +11,14 @@ using TripGallery.API.UnitOfWork.Trip;
 namespace TripGallery.API.Controllers
 {
 
-    [EnableCors("https://localhost:44316", "*", "GET, POST, PATCH")]
+    [EnableCors("https://localhost:44315", "*", "GET, POST, PATCH")]
     public class TripsController : ApiController
     {
 
         // anyone can get trips
         [Route("api/trips")]
         [HttpGet]
+        [Authorize]
         public IHttpActionResult Get()
         {
             try
