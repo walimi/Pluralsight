@@ -1,0 +1,4 @@
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.DTO\bin\Debug\TripGallery.DTO.dll
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.DTO\bin\Debug\TripGallery.DTO.pdb
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.DTO\obj\Debug\TripGallery.DTO.dll
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.DTO\obj\Debug\TripGallery.DTO.pdb

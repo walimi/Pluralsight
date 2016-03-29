@@ -12,7 +12,7 @@ namespace TripGallery
         public const string TripGalleryClientSecret = "myrandomclientsecret";
 
         public const string TripGalleryIssuerUri = "https://tripcompanysts/identity";
-        public const string TripGallerySTSOrigin = "https://localhost:44317";
+        public const string TripGallerySTSOrigin = "https://localhost:44300";
         public const string TripGallerySTS = TripGallerySTSOrigin + "/identity";
         public const string TripGallerySTSTokenEndpoint = TripGallerySTS + "/connect/token";
         public const string TripGallerySTSAuthorizationEndpoint = TripGallerySTS + "/connect/authorize";

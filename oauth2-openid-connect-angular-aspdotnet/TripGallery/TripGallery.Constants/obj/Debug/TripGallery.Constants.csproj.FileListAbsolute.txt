@@ -1,0 +1,4 @@
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Constants\bin\Debug\TripGallery.Constants.dll
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Constants\bin\Debug\TripGallery.Constants.pdb
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Constants\obj\Debug\TripGallery.Constants.dll
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Constants\obj\Debug\TripGallery.Constants.pdb
