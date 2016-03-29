@@ -32,7 +32,11 @@ namespace TripCompany.IdentityServer.Config
                     ClientId = "tripgalleryimplicit",
                     ClientName = "Trip Gallery (Implicit)",
                     Flow = Flows.Implicit,
-                    AllowAccessToAllScopes = true,
+                    //AllowAccessToAllScopes = true,
+                    AllowedScopes = new List<string>()
+                    {
+                        "gallerymanagement"
+                    },
                     // redirect = URI of the Angular application callback page
                     RedirectUris = new List<string>
                     {
