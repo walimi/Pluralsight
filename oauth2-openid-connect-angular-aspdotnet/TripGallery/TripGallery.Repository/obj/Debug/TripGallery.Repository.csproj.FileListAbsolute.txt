@@ -4,6 +4,5 @@ E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.R
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Repository\bin\Debug\Newtonsoft.Json.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Repository\bin\Debug\Microsoft.Owin.FileSystems.xml
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Repository\bin\Debug\Newtonsoft.Json.xml
-E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Repository\obj\Debug\TripGallery.Repository.csprojResolveAssemblyReference.cache
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Repository\obj\Debug\TripGallery.Repository.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.Repository\obj\Debug\TripGallery.Repository.pdb

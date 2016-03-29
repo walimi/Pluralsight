@@ -3,6 +3,7 @@ E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.M
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\TripGallery.MVCClient.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\TripGallery.MVCClient.pdb
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\Antlr3.Runtime.dll
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\IdentityModel.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\Marvin.JsonPatch.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\Microsoft.Owin.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\Microsoft.Owin.Host.SystemWeb.dll
@@ -21,6 +22,7 @@ E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.M
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\WebGrease.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\TripGallery.Constants.pdb
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\TripGallery.DTO.pdb
+E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\IdentityModel.pdb
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\Microsoft.Owin.xml
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\Microsoft.Owin.Host.SystemWeb.xml
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\Newtonsoft.Json.xml
@@ -35,5 +37,3 @@ E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.M
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\obj\Debug\TripGallery.MVCClient.csprojResolveAssemblyReference.cache
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\obj\Debug\TripGallery.MVCClient.dll
 E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\obj\Debug\TripGallery.MVCClient.pdb
-E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\IdentityModel.dll
-E:\Pluralsight\oauth2-openid-connect-angular-aspdotnet\TripGallery\TripGallery.MVCClient\bin\IdentityModel.pdb
