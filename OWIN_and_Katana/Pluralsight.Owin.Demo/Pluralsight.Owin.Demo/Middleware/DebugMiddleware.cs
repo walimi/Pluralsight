@@ -14,20 +14,28 @@ namespace Pluralsight.Owin.Demo.Middleware
 {
     public class DebugMiddleware
     {
-        private AppFunc _next;
+        private readonly AppFunc _next;
+        private readonly DebugMiddlewareOptions _options;
 
-        public DebugMiddleware(AppFunc next)
+        public DebugMiddleware(AppFunc next, DebugMiddlewareOptions options)
         {
             _next = next;
+            _options = options;
+
+            if (_options.OnIncomingREquest == null)
+                _options.OnIncomingREquest = (ctx) => { Debug.WriteLine("Incoming request: " + ctx.Request.Path); };
+
+            if (_options.OnOutgoingREquest == null)
+                _options.OnOutgoingREquest = (ctx) => { Debug.WriteLine("Outgoing request: " + ctx.Request.Path); };
         }
 
         public async Task Invoke(IDictionary<string, object> environment)
         {
             var ctx = new OwinContext(environment);
 
-            Debug.WriteLine("Incoming request: " + ctx.Request.Path);
+            _options.OnIncomingREquest(ctx);
             await _next(environment);
-            Debug.WriteLine("Outgoing request: " + ctx.Request.Path);
+            _options.OnOutgoingREquest(ctx);
         }
     }
 }
