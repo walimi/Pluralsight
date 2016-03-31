@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
-using System.Web;
+﻿using System.Diagnostics;
 using Owin;
+using Pluralsight.Owin.Demo.Middleware;
 
 namespace Pluralsight.Owin.Demo
 {
@@ -13,12 +9,7 @@ namespace Pluralsight.Owin.Demo
         public static void Configuration(IAppBuilder app)
         {
 
-            app.Use(async (ctx, next) =>
-            {
-                Debug.WriteLine("Incoming request: " + ctx.Request.Path);
-                await next();
-                Debug.WriteLine("Outgoing request: " + ctx.Request.Path);
-            });
+            app.Use<DebugMiddleware>();
 
             app.Use(async (ctx, next) =>
             {
