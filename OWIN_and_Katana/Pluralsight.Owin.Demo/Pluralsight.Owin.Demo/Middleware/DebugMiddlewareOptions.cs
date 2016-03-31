@@ -8,7 +8,7 @@ namespace Pluralsight.Owin.Demo.Middleware
 {
     public class DebugMiddlewareOptions
     {
-        public Action<IOwinContext> OnIncomingREquest { get; set; }
-        public Action<IOwinContext> OnOutgoingREquest { get; set; }
+        public Action<IOwinContext> OnIncomingRequest { get; set; }
+        public Action<IOwinContext> OnOutgoingRequest { get; set; }
     }
 }

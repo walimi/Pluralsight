@@ -9,7 +9,22 @@ namespace Pluralsight.Owin.Demo
         public static void Configuration(IAppBuilder app)
         {
 
-            app.Use<DebugMiddleware>(new DebugMiddlewareOptions());
+            app.Use<DebugMiddleware>(new DebugMiddlewareOptions
+            {
+                OnIncomingRequest = (ctx) =>
+                {
+                    var watch = new Stopwatch();
+                    watch.Start();
+                    ctx.Environment["DebugStopWatch"] = watch; 
+                }, 
+                OnOutgoingRequest = (ctx) =>
+                {
+                    var watch = (Stopwatch) ctx.Environment["DebugStopWatch"];
+                    watch.Stop();
+                    Debug.WriteLine("Request took: " + watch.ElapsedMilliseconds + " ms.");
+                }
+
+            });
 
             app.Use(async (ctx, next) =>
             {

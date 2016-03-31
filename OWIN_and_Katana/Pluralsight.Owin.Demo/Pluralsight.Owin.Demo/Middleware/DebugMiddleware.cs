@@ -22,20 +22,20 @@ namespace Pluralsight.Owin.Demo.Middleware
             _next = next;
             _options = options;
 
-            if (_options.OnIncomingREquest == null)
-                _options.OnIncomingREquest = (ctx) => { Debug.WriteLine("Incoming request: " + ctx.Request.Path); };
+            if (_options.OnIncomingRequest == null)
+                _options.OnIncomingRequest = (ctx) => { Debug.WriteLine("Incoming request: " + ctx.Request.Path); };
 
-            if (_options.OnOutgoingREquest == null)
-                _options.OnOutgoingREquest = (ctx) => { Debug.WriteLine("Outgoing request: " + ctx.Request.Path); };
+            if (_options.OnOutgoingRequest == null)
+                _options.OnOutgoingRequest = (ctx) => { Debug.WriteLine("Outgoing request: " + ctx.Request.Path); };
         }
 
         public async Task Invoke(IDictionary<string, object> environment)
         {
             var ctx = new OwinContext(environment);
 
-            _options.OnIncomingREquest(ctx);
+            _options.OnIncomingRequest(ctx);
             await _next(environment);
-            _options.OnOutgoingREquest(ctx);
+            _options.OnOutgoingRequest(ctx);
         }
     }
 }
