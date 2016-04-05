@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Web.Http;
+using Microsoft.Owin;
+using Microsoft.Owin.Security.Cookies;
 using Nancy;
 using Owin;
 using Pluralsight.Owin.Demo.Middleware;
@@ -29,16 +31,22 @@ namespace Pluralsight.Owin.Demo
             });
 
 
+            app.UseCookieAuthentication(new CookieAuthenticationOptions
+                {
+                    AuthenticationType = "ApplicationCookie",
+                    LoginPath = new PathString("/Auth/Login")
+                });
+
             var httpConfig = new HttpConfiguration();
             httpConfig.MapHttpAttributeRoutes(); // goes through all controllers and maps the routes
             app.UseWebApi(httpConfig); 
 
-            //app.Map("/nancy", mappedApp => { mappedApp.UseNancy(); });
-            app.UseNancy(config =>
-            {
-                config.PassThroughWhenStatusCodesAre(HttpStatusCode.NotFound);
+            app.Map("/nancy", mappedApp => { mappedApp.UseNancy(); });
+            //app.UseNancy(config =>
+            //{
+            //    config.PassThroughWhenStatusCodesAre(HttpStatusCode.NotFound);
 
-            });
+            //});
 
             //app.Use(async (ctx, next) =>
             //{
