@@ -21,3 +21,7 @@ E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\M
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\Debug\Pluralsight.Owin.Demo.csprojResolveAssemblyReference.cache
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\Debug\Pluralsight.Owin.Demo.dll
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\Debug\Pluralsight.Owin.Demo.pdb
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.Owin.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.xml
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.Owin.xml

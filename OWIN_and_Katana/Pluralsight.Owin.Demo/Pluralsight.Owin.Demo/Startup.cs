@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
+using Nancy;
 using Owin;
 using Pluralsight.Owin.Demo.Middleware;
+using Nancy.Owin; 
 
 namespace Pluralsight.Owin.Demo
 {
@@ -22,6 +24,14 @@ namespace Pluralsight.Owin.Demo
                     watch.Stop();
                     Debug.WriteLine("Request took: " + watch.ElapsedMilliseconds + " ms.");
                 }
+
+            });
+
+
+            //app.Map("/nancy", mappedApp => { mappedApp.UseNancy(); });
+            app.UseNancy(config =>
+            {
+                config.PassThroughWhenStatusCodesAre(HttpStatusCode.NotFound);
 
             });
 
