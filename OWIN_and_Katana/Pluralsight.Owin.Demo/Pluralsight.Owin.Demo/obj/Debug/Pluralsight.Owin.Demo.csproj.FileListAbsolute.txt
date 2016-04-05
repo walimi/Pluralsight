@@ -25,3 +25,11 @@ E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\N
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.Owin.dll
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.xml
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.Owin.xml
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Newtonsoft.Json.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\System.Net.Http.Formatting.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\System.Web.Http.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\System.Web.Http.Owin.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Newtonsoft.Json.xml
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\System.Net.Http.Formatting.xml
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\System.Web.Http.xml
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\System.Web.Http.Owin.xml

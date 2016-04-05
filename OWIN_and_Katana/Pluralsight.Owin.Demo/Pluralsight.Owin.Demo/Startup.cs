@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Web.Http;
 using Nancy;
 using Owin;
 using Pluralsight.Owin.Demo.Middleware;
@@ -27,6 +28,10 @@ namespace Pluralsight.Owin.Demo
 
             });
 
+
+            var httpConfig = new HttpConfiguration();
+            httpConfig.MapHttpAttributeRoutes(); // goes through all controllers and maps the routes
+            app.UseWebApi(httpConfig); 
 
             //app.Map("/nancy", mappedApp => { mappedApp.UseNancy(); });
             app.UseNancy(config =>
