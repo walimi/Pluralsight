@@ -30,11 +30,9 @@ namespace Pluralsight.Owin.Demo.Controllers
                     new Claim(ClaimTypes.Name, model.Username)
                 });
                 HttpContext.GetOwinContext().Authentication.SignIn(identity);
-                return Redirect("/Secret");
             }
-
-            
             return View(model);
+
         }
 
         public ActionResult Logout()
