@@ -49,3 +49,4 @@ E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\S
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\System.Web.WebPages.Razor.xml
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\Debug\Pluralsight.Owin.Demo.dll
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\Debug\Pluralsight.Owin.Demo.pdb
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\Debug\Pluralsight.Owin.Demo.csprojResolveAssemblyReference.cache

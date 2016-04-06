@@ -29,11 +29,18 @@ namespace Pluralsight.Owin.Demo.Controllers
                     new Claim(ClaimTypes.NameIdentifier, model.Username),
                     new Claim(ClaimTypes.Name, model.Username)
                 });
-                HttpContext.GetOwinContext().Authentication.SignIn(identity); 
+                HttpContext.GetOwinContext().Authentication.SignIn(identity);
+                return Redirect("/Secret");
             }
 
             
             return View(model);
+        }
+
+        public ActionResult Logout()
+        {
+            HttpContext.GetOwinContext().Authentication.SignOut();
+            return Redirect("/");
         }
     }
 }
