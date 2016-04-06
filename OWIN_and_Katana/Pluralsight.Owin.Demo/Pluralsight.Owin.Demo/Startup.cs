@@ -37,6 +37,15 @@ namespace Pluralsight.Owin.Demo
                     LoginPath = new PathString("/Auth/Login")
                 });
 
+            app.Use(async (ctx, next) =>
+            {
+                if (ctx.Authentication.User.Identity.IsAuthenticated)
+                    Debug.WriteLine("User: " + ctx.Authentication.User.Identity.Name);
+                else
+                    Debug.WriteLine("User not authenticated.");
+                await next(); 
+            });
+
             var httpConfig = new HttpConfiguration();
             httpConfig.MapHttpAttributeRoutes(); // goes through all controllers and maps the routes
             app.UseWebApi(httpConfig); 
