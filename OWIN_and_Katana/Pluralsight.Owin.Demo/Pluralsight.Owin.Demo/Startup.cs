@@ -44,6 +44,15 @@ namespace Pluralsight.Owin.Demo
                     SignInAsAuthenticationType = "ApplicationCookie"
             });
 
+            app.UseTwitterAuthentication(new Microsoft.Owin.Security.Twitter.TwitterAuthenticationOptions
+                {
+                    ConsumerKey = "9kQY2IT2zLakNy7XQlOHAYYR3",
+                    ConsumerSecret = "CSUWCz54qI9P6mZwJBmgMEnMDIVWzmlb6OgEArTeJlTlCMCG3h",
+                    SignInAsAuthenticationType = "ApplicationCookie",
+                    BackchannelCertificateValidator = null // this is not a good idea in production scenarios.
+                                                           // you could use the microsoft.owin.security.certificatethumbprintvalidator
+                });
+
             app.Use(async (ctx, next) =>
             {
                 if (ctx.Authentication.User.Identity.IsAuthenticated)

@@ -14,6 +14,13 @@ namespace Pluralsight.Owin.Demo.Controllers
         public ActionResult Login()
         {
             var model = new LoginModel();
+
+            var providers = HttpContext.GetOwinContext()
+                .Authentication.GetAuthenticationTypes(x => !string.IsNullOrEmpty(x.Caption))
+                .ToList();
+
+            model.AuthProviders = providers;
+
             return View(model);
         }
 
@@ -41,12 +48,12 @@ namespace Pluralsight.Owin.Demo.Controllers
             return Redirect("/");
         }
 
-        public ActionResult LoginFacebook()
+        public ActionResult SocialLogin(string id)
         {
             HttpContext.GetOwinContext().Authentication.Challenge(new Microsoft.Owin.Security.AuthenticationProperties
             {
                 RedirectUri = "/secret"
-            }, "Facebook");
+            }, id);
             return new HttpUnauthorizedResult(); 
         }
     }

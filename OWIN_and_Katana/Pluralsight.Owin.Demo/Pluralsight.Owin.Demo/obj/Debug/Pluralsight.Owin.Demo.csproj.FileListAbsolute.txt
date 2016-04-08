@@ -54,3 +54,5 @@ E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\N
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.MSOwinSecurity.pdb
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Microsoft.Owin.Security.Facebook.dll
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Microsoft.Owin.Security.Twitter.xml
