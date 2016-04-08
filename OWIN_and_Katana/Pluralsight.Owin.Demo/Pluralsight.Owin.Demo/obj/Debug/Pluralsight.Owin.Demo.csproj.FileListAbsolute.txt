@@ -52,3 +52,5 @@ E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\D
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\obj\Debug\Pluralsight.Owin.Demo.csprojResolveAssemblyReference.cache
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.MSOwinSecurity.dll
 E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Nancy.MSOwinSecurity.pdb
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Pluralsight\OWIN_and_Katana\Pluralsight.Owin.Demo\Pluralsight.Owin.Demo\bin\Microsoft.Owin.Security.Facebook.xml

@@ -37,6 +37,13 @@ namespace Pluralsight.Owin.Demo
                     LoginPath = new PathString("/Auth/Login")
                 });
 
+            app.UseFacebookAuthentication(new Microsoft.Owin.Security.Facebook.FacebookAuthenticationOptions
+                {
+                    AppId = "973865572729055",
+                    AppSecret = "b681c5e4f644fdd0259f6eecef84915e",
+                    SignInAsAuthenticationType = "ApplicationCookie"
+            });
+
             app.Use(async (ctx, next) =>
             {
                 if (ctx.Authentication.User.Identity.IsAuthenticated)
