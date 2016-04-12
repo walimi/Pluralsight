@@ -8,7 +8,7 @@ namespace Pluralsight.Owin.Demo.Hosting
         {
             app.UseStaticFiles();
             app.Use(async (ctx, next) => {
-                await ctx.Response.WriteAsync("Hello world");
+                await ctx.Response.WriteAsync("Hello World");
             });
         }
     }
