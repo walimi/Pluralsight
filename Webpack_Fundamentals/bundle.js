@@ -42,11 +42,28 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(1);
+	module.exports = __webpack_require__(2);
+
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
+
+	// This is global JS (i.e, jQuery plugin) provided to all apps.
+	 
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./login\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	document.write("Welcome to Big Hair Concerts!");
 
-	console.log('App loaded');
+
 
 /***/ }
 /******/ ]);
