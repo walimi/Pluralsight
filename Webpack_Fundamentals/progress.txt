@@ -1,1 +1,3 @@
 5/5/2016: 2.6 Using Loaders. Code is complete but waiting on node modules to install. Wrote code for Using preloaders as well. These have not been tested yet. 
+
+5/6/2016: Finished Production vs. Dev builds module. I'm seeing an issue with login module not loading when running the code. 
