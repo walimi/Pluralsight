@@ -9,7 +9,7 @@ describe('userData', function(){
     beforeEach(module('eventsApp'));
 
     beforeEach(function(){
-        // Creating mock userResource object and the methods associated with the real object. 
+        // Creating mock userResource object and the methods associated with the real object.
         mockUserResource = sinon.stub({get: function(){}, save: function(){}});
 
         // In the following line of code we're explicitly telling Angular to return a mockUserResource
