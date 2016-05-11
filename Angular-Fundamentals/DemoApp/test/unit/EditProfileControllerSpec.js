@@ -2,7 +2,7 @@
  * Created by Wahid on 5/11/2016.
  */
 'use strict';
-describe('EditProfileControllerSpec', function() {
+describe('EditProfileController', function() {
 
     var $controllerConstructor, scope, mockGravatarUrlBuilder;
 

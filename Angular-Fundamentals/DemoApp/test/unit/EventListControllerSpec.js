@@ -3,7 +3,7 @@
  */
 'use strict'
 
-describe('EventListControllerSpec', function() {
+describe('EventListController', function() {
     var $controllerConstructor, scope, mockEventData;
 
     beforeEach(module("eventsApp"));

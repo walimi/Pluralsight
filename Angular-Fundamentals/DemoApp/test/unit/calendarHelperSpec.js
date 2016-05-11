@@ -3,7 +3,7 @@
  */
 'use strict';
 
-describe('calendarHelperSpec', function() {
+describe('calendarHelper', function() {
 
     beforeEach(module('eventsApp'));
 
