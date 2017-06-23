@@ -7,7 +7,7 @@ eventsApp.factory('eventData', function($resource) {
             return resource.get({id:eventId});
         },
         save: function(event) {
-            event.id = 9; // this is just for demo. in real world app you'd have to grab the max id and add 1 to it.
+            event.id = 999; // this is just for demo. in real world app you'd have to grab the max id and add 1 to it.
             return resource.save(event);
         },
         getAllEvents: function() {
