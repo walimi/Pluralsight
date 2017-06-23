@@ -1,15 +1,19 @@
 // Simulating some sort of async call. 
-function asyncMethod(message, cb) {
-    setTimeout(function() {
-        console.log(message);
-        cb();
-    }, 500);
+function asyncMethod(message) {
+    
+    // returning a promise
+    return new Promise(function(fulfill, reject){
+        setTimeout(function() {
+            console.log(message);
+            fulfill();
+        }, 500);    
+    });
 }
 
-asyncMethod('Open DB Connection', function() {
-    asyncMethod('Find User', function() {
-        asyncMethod('Validate User', function() {
-            asyncMethod('Do stuff', function() {})
+asyncMethod('Open DB Connection').then(function() {
+    asyncMethod('Find User').then(function() {
+        asyncMethod('Validate User').then(function() {
+            asyncMethod('Do stuff').then(function() {})
         })
     })
 })
