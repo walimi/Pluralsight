@@ -10,10 +10,16 @@ function asyncMethod(message) {
     });
 }
 
-asyncMethod('Open DB Connection').then(function() {
-    asyncMethod('Find User').then(function() {
-        asyncMethod('Validate User').then(function() {
-            asyncMethod('Do stuff').then(function() {})
-        })
-    })
-})
+function doStuff() {
+    asyncMethod('Do stuff').then(function() {})
+}
+
+function validateUser() {
+    asyncMethod('Validate User').then(doStuff)
+}
+
+function findUser() {
+    asyncMethod('Find User').then(validateUser)
+}
+
+asyncMethod('Open DB Connection').then(findUser)
