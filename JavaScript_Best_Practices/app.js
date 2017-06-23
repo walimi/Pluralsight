@@ -11,15 +11,19 @@ function asyncMethod(message) {
 }
 
 function doStuff() {
-    asyncMethod('Do stuff').then(function() {})
+    return asyncMethod('Do stuff');
 }
 
 function validateUser() {
-    asyncMethod('Validate User').then(doStuff)
+    return asyncMethod('Validate User');
 }
 
 function findUser() {
-    asyncMethod('Find User').then(validateUser)
+    return asyncMethod('Find User');
 }
 
-asyncMethod('Open DB Connection').then(findUser)
+asyncMethod('Open DB Connection')
+    .then(findUser)
+    .then(validateUser)
+    .then(doStuff)
+    .then(function() {})
