@@ -50,7 +50,16 @@ function GetBookByID(id) {
     var allBooks = GetAllBooks();
     return allBooks.filter(function (book) { return book.id === id; })[0];
 }
+function CreateCustomerID(name, id) {
+    return name + id;
+}
 //************************************************************* */
-var fictionBooks = GetBookTitlesByCategory(Category.Fiction);
-fictionBooks.forEach(function (val, idx, arr) { return console.log(++idx + ' - ' + val); });
+var x;
+x = 5;
+var IdGenerator;
+IdGenerator = function (name, id) { return id + name; };
+var myID = IdGenerator('daniel', 20);
+console.log(myID);
+// const fictionBooks = GetBookTitlesByCategory(Category.Fiction); 
+// fictionBooks.forEach((val, idx, arr) => console.log(++idx + ' - ' + val)); 
 //# sourceMappingURL=app.js.map
