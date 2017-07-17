@@ -70,9 +70,29 @@ function CreateCustomer(name: string, age?: number, city?: string): void {
     }
 }
 
+// ellipses denote that the parameter is a rest parameter. 
+function CheckoutBooks(customer: string, ...bookIDs: number[]): string[] {
+    
+    console.log("Checking out books for " + customer);
+
+    let booksCheckedOut: string[] = [];
+
+    for(let id of bookIDs) {
+        let book = GetBookByID(id);
+        if(book.available) {
+            booksCheckedOut.push(book.title);
+        }
+    }
+    
+    return booksCheckedOut;
+}
+
 //************************************************************* */
 
-LogFirstAvailable();
+let myBooks: string[] = CheckoutBooks('Thorne', 1, 3, 4); // here we can pass one book id or multiple book ids
+myBooks.forEach(title => console.log(title));
+
+//LogFirstAvailable();
 
 // let fictionBooks = GetBookTitlesByCategory(); // no need to define the category parameter b/c the
 //                                              // function has a default value for category

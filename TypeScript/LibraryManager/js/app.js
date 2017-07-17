@@ -64,8 +64,27 @@ function CreateCustomer(name, age, city) {
         console.log('City: ' + city);
     }
 }
+// ellipses denote that the parameter is a rest parameter. 
+function CheckoutBooks(customer) {
+    var bookIDs = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        bookIDs[_i - 1] = arguments[_i];
+    }
+    console.log("Checking out books for " + customer);
+    var booksCheckedOut = [];
+    for (var _a = 0, bookIDs_1 = bookIDs; _a < bookIDs_1.length; _a++) {
+        var id = bookIDs_1[_a];
+        var book = GetBookByID(id);
+        if (book.available) {
+            booksCheckedOut.push(book.title);
+        }
+    }
+    return booksCheckedOut;
+}
 //************************************************************* */
-LogFirstAvailable();
+var myBooks = CheckoutBooks('Thorne', 1, 3, 4); // here we can pass one book id or multiple book ids
+myBooks.forEach(function (title) { return console.log(title); });
+//LogFirstAvailable();
 // let fictionBooks = GetBookTitlesByCategory(); // no need to define the category parameter b/c the
 //                                              // function has a default value for category
 // fictionBooks.forEach(title => console.log(title));                                         
