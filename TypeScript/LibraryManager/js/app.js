@@ -81,9 +81,36 @@ function CheckoutBooks(customer) {
     }
     return booksCheckedOut;
 }
+function GetTitles(bookProperty) {
+    var allBooks = GetAllBooks();
+    var foundTitles = [];
+    if (typeof bookProperty === 'string') {
+        // get all books by a particular author
+        for (var _i = 0, allBooks_2 = allBooks; _i < allBooks_2.length; _i++) {
+            var book = allBooks_2[_i];
+            if (book.author === bookProperty) {
+                foundTitles.push(book.title);
+            }
+        }
+    }
+    else if (typeof bookProperty === 'boolean') {
+        // get all books by availability
+        for (var _a = 0, allBooks_3 = allBooks; _a < allBooks_3.length; _a++) {
+            var book = allBooks_3[_a];
+            if (book.available === bookProperty) {
+                foundTitles.push(book.title);
+            }
+        }
+    }
+    return foundTitles;
+}
 //************************************************************* */
-var myBooks = CheckoutBooks('Thorne', 1, 3, 4); // here we can pass one book id or multiple book ids
-myBooks.forEach(function (title) { return console.log(title); });
+var checkedOutBooks = GetTitles(false);
+checkedOutBooks.forEach(function (title) { return console.log(title); });
+// let hermanBooks = GetTitles('Herman Melville');
+// hermanBooks.forEach(title => console.log(title));
+// let myBooks: string[] = CheckoutBooks('Thorne', 1, 3, 4); // here we can pass one book id or multiple book ids
+// myBooks.forEach(title => console.log(title));
 //LogFirstAvailable();
 // let fictionBooks = GetBookTitlesByCategory(); // no need to define the category parameter b/c the
 //                                              // function has a default value for category
