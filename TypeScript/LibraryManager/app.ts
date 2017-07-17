@@ -57,16 +57,34 @@ function CreateCustomerID(name:string, id: number): string {
     return name + id; 
 }
 
+function CreateCustomer(name: string, age?: number, city?: string): void {
+
+    console.log('Creating customer: ' + name);
+
+    if (age) {
+        console.log('Age:' + age);
+    }
+
+    if (city) {
+        console.log('City: ' + city);
+    }
+}
+
 //************************************************************* */
 
-let x: number;
-x = 5; 
+//CreateCustomer('Michelle');
+//CreateCustomer('Leigh', 6);
+//CreateCustomer('Marie', 12, 'Atlanta');
 
-let IdGenerator: (chars: string, nums: number) => string;
-IdGenerator = (name: string, id: number) => { return id + name }; 
 
-let myID: string = IdGenerator('daniel', 20);
-console.log(myID);
+// let x: number;
+// x = 5; 
+
+// let IdGenerator: (chars: string, nums: number) => string;
+// IdGenerator = (name: string, id: number) => { return id + name }; 
+
+// let myID: string = IdGenerator('daniel', 20);
+// console.log(myID);
 
 
 

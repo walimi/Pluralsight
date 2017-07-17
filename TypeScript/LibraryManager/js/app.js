@@ -53,13 +53,25 @@ function GetBookByID(id) {
 function CreateCustomerID(name, id) {
     return name + id;
 }
+function CreateCustomer(name, age, city) {
+    console.log('Creating customer: ' + name);
+    if (age) {
+        console.log('Age:' + age);
+    }
+    if (city) {
+        console.log('City: ' + city);
+    }
+}
 //************************************************************* */
-var x;
-x = 5;
-var IdGenerator;
-IdGenerator = function (name, id) { return id + name; };
-var myID = IdGenerator('daniel', 20);
-console.log(myID);
+//CreateCustomer('Michelle');
+//CreateCustomer('Leigh', 6);
+//CreateCustomer('Marie', 12, 'Atlanta');
+// let x: number;
+// x = 5; 
+// let IdGenerator: (chars: string, nums: number) => string;
+// IdGenerator = (name: string, id: number) => { return id + name }; 
+// let myID: string = IdGenerator('daniel', 20);
+// console.log(myID);
 // const fictionBooks = GetBookTitlesByCategory(Category.Fiction); 
 // fictionBooks.forEach((val, idx, arr) => console.log(++idx + ' - ' + val)); 
 //# sourceMappingURL=app.js.map
