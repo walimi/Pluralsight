@@ -9,7 +9,7 @@ function GetAllBooks() {
     return books;
 }
 
-function LogFirstAvailable(books): void {
+function LogFirstAvailable(books = GetAllBooks()): void {
     let numberOfBooks: number = books.length;
     let firstAvailable: string = '';
     
@@ -27,7 +27,7 @@ function LogFirstAvailable(books): void {
 
 enum Category { Biography, Poetry, Fiction, History, Children }
 
-function GetBookTitlesByCategory(categoryFilter: Category): Array<string> {
+function GetBookTitlesByCategory(categoryFilter: Category = Category.Fiction): Array<string> {
     console.log('Getting books in category: ' + Category[categoryFilter]);
 
     const allBooks = GetAllBooks();
@@ -71,6 +71,13 @@ function CreateCustomer(name: string, age?: number, city?: string): void {
 }
 
 //************************************************************* */
+
+LogFirstAvailable();
+
+// let fictionBooks = GetBookTitlesByCategory(); // no need to define the category parameter b/c the
+//                                              // function has a default value for category
+
+// fictionBooks.forEach(title => console.log(title));                                         
 
 //CreateCustomer('Michelle');
 //CreateCustomer('Leigh', 6);

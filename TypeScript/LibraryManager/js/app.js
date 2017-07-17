@@ -8,6 +8,7 @@ function GetAllBooks() {
     return books;
 }
 function LogFirstAvailable(books) {
+    if (books === void 0) { books = GetAllBooks(); }
     var numberOfBooks = books.length;
     var firstAvailable = '';
     for (var _i = 0, books_1 = books; _i < books_1.length; _i++) {
@@ -29,6 +30,7 @@ var Category;
     Category[Category["Children"] = 4] = "Children";
 })(Category || (Category = {}));
 function GetBookTitlesByCategory(categoryFilter) {
+    if (categoryFilter === void 0) { categoryFilter = Category.Fiction; }
     console.log('Getting books in category: ' + Category[categoryFilter]);
     var allBooks = GetAllBooks();
     var filteredTitles = [];
@@ -63,6 +65,10 @@ function CreateCustomer(name, age, city) {
     }
 }
 //************************************************************* */
+LogFirstAvailable();
+// let fictionBooks = GetBookTitlesByCategory(); // no need to define the category parameter b/c the
+//                                              // function has a default value for category
+// fictionBooks.forEach(title => console.log(title));                                         
 //CreateCustomer('Michelle');
 //CreateCustomer('Leigh', 6);
 //CreateCustomer('Marie', 12, 'Atlanta');
