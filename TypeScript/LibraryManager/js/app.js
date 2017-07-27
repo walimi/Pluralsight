@@ -103,17 +103,17 @@ function PrintBook(book) {
     console.log(book.title + ' by ' + book.author);
 }
 //************************************************************* */
-var myBook = {
-    id: 5,
-    title: 'Pride and Prejudice',
-    author: 'Janes Austen',
-    available: true,
-    category: enums_1.Category.Fiction,
-    markDamaged: function (reason) { return console.log('Damaged: ' + reason); }
-};
-// PrintBook(myBook); 
-// myBook.markDamaged('torn pages');
-var logDamage;
-logDamage = function (damage) { return console.log('Damage reported:' + damage); };
-logDamage('coffee stains');
+// let myBook = {
+//     id: 5,
+//     title: 'Pride and Prejudice',
+//     author: 'Janes Austen',
+//     available: true,
+//     category: Category.Fiction,
+//     markDamaged: (reason: string) => console.log('Damaged: ' + reason) 
+// };
+// // PrintBook(myBook); 
+// // myBook.markDamaged('torn pages');
+// let logDamage: DamageLogger;
+// logDamage = (damage: string) => console.log('Damage reported:' + damage);
+// logDamage('coffee stains');
 //# sourceMappingURL=app.js.map

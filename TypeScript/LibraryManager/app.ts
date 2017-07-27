@@ -1,5 +1,5 @@
 import { Category } from './enums';
-import { Book, DamageLogger } from './interfaces';
+import { Book, DamageLogger, Author, Librarian } from './interfaces';
 
 function GetAllBooks(): Book[] {
     let books = [
@@ -122,18 +122,19 @@ function PrintBook(book: Book): void {
 
 //************************************************************* */
 
-let myBook = {
-    id: 5,
-    title: 'Pride and Prejudice',
-    author: 'Janes Austen',
-    available: true,
-    category: Category.Fiction,
-    markDamaged: (reason: string) => console.log('Damaged: ' + reason) 
-};
+// let myBook = {
+//     id: 5,
+//     title: 'Pride and Prejudice',
+//     author: 'Janes Austen',
+//     available: true,
+//     category: Category.Fiction,
+//     markDamaged: (reason: string) => console.log('Damaged: ' + reason) 
+// };
 
-// PrintBook(myBook); 
-// myBook.markDamaged('torn pages');
+// // PrintBook(myBook); 
+// // myBook.markDamaged('torn pages');
 
-let logDamage: DamageLogger;
-logDamage = (damage: string) => console.log('Damage reported:' + damage);
-logDamage('coffee stains');
+// let logDamage: DamageLogger;
+// logDamage = (damage: string) => console.log('Damage reported:' + damage);
+// logDamage('coffee stains');
+
