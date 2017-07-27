@@ -1,9 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var enums_1 = require("./enums");
 function GetAllBooks() {
     var books = [
-        { id: 1, title: 'Kite Runner', author: 'Khaled Hosseini', available: true, category: Category.Fiction },
-        { id: 2, title: 'A Farewell to Arms', author: 'Ernest Hemignway', available: false, category: Category.Fiction },
-        { id: 3, title: 'I Know Why the Caged Birds Sings', author: 'Maya Angleo', available: true, category: Category.Poetry },
-        { id: 4, title: 'Moby Dick', author: 'Herman Melville', available: true, category: Category.Fiction }
+        { id: 1, title: 'Kite Runner', author: 'Khaled Hosseini', available: true, category: enums_1.Category.Fiction },
+        { id: 2, title: 'A Farewell to Arms', author: 'Ernest Hemignway', available: false, category: enums_1.Category.Fiction },
+        { id: 3, title: 'I Know Why the Caged Birds Sings', author: 'Maya Angleo', available: true, category: enums_1.Category.Poetry },
+        { id: 4, title: 'Moby Dick', author: 'Herman Melville', available: true, category: enums_1.Category.Fiction }
     ];
     return books;
 }
@@ -22,8 +25,8 @@ function LogFirstAvailable(books) {
     console.log('First Available: ' + firstAvailable);
 }
 function GetBookTitlesByCategory(categoryFilter) {
-    if (categoryFilter === void 0) { categoryFilter = Category.Fiction; }
-    console.log('Getting books in category: ' + Category[categoryFilter]);
+    if (categoryFilter === void 0) { categoryFilter = enums_1.Category.Fiction; }
+    console.log('Getting books in category: ' + enums_1.Category[categoryFilter]);
     var allBooks = GetAllBooks();
     var filteredTitles = [];
     for (var _i = 0, allBooks_1 = allBooks; _i < allBooks_1.length; _i++) {
@@ -96,26 +99,20 @@ function GetTitles(bookProperty) {
     }
     return foundTitles;
 }
+function PrintBook(book) {
+    console.log(book.title + ' by ' + book.author);
+}
 //************************************************************* */
-var checkedOutBooks = GetTitles(false);
-checkedOutBooks.forEach(function (title) { return console.log(title); });
-// let hermanBooks = GetTitles('Herman Melville');
-// hermanBooks.forEach(title => console.log(title));
-// let myBooks: string[] = CheckoutBooks('Thorne', 1, 3, 4); // here we can pass one book id or multiple book ids
-// myBooks.forEach(title => console.log(title));
-//LogFirstAvailable();
-// let fictionBooks = GetBookTitlesByCategory(); // no need to define the category parameter b/c the
-//                                              // function has a default value for category
-// fictionBooks.forEach(title => console.log(title));                                         
-//CreateCustomer('Michelle');
-//CreateCustomer('Leigh', 6);
-//CreateCustomer('Marie', 12, 'Atlanta');
-// let x: number;
-// x = 5; 
-// let IdGenerator: (chars: string, nums: number) => string;
-// IdGenerator = (name: string, id: number) => { return id + name }; 
-// let myID: string = IdGenerator('daniel', 20);
-// console.log(myID);
-// const fictionBooks = GetBookTitlesByCategory(Category.Fiction); 
-// fictionBooks.forEach((val, idx, arr) => console.log(++idx + ' - ' + val)); 
+var myBook = {
+    id: 5,
+    title: 'Pride and Prejudice',
+    author: 'Janes Austen',
+    available: true,
+    category: enums_1.Category.Fiction,
+    year: 1813,
+    copies: 3
+};
+PrintBook(myBook); // eventhough we declare myBook to be of type Book we can 
+// still pass it to the PrintBook function b/c it has 
+// all the attributes of the Book interface (i.e. Duck typing) 
 //# sourceMappingURL=app.js.map

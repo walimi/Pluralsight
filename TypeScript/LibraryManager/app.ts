@@ -1,4 +1,7 @@
-function GetAllBooks() {
+import { Category } from './enums';
+import { Book } from './interfaces';
+
+function GetAllBooks(): Book[] {
     let books = [
         { id: 1, title: 'Kite Runner', author: 'Khaled Hosseini', available: true, category: Category.Fiction },
         { id: 2, title: 'A Farewell to Arms', author: 'Ernest Hemignway', available: false, category: Category.Fiction },
@@ -46,7 +49,7 @@ function LogBookTitles(titles: string[]):void {
     }
 }
 
-function GetBookByID(id: number) {
+function GetBookByID(id: number): Book {
     const allBooks = GetAllBooks();
     return allBooks.filter(book => book.id === id)[0]; 
 }
@@ -113,39 +116,22 @@ function GetTitles(bookProperty: any): string[] {
     return foundTitles; 
 }
 
+function PrintBook(book: Book): void {
+    console.log(book.title + ' by ' + book.author);
+}
 
 //************************************************************* */
-let checkedOutBooks = GetTitles(false);
-checkedOutBooks.forEach(title => console.log(title));
 
-// let hermanBooks = GetTitles('Herman Melville');
-// hermanBooks.forEach(title => console.log(title));
+let myBook = {
+    id: 5,
+    title: 'Pride and Prejudice',
+    author: 'Janes Austen',
+    available: true,
+    category: Category.Fiction, 
+    year: 1813,
+    copies: 3
+};
 
-// let myBooks: string[] = CheckoutBooks('Thorne', 1, 3, 4); // here we can pass one book id or multiple book ids
-// myBooks.forEach(title => console.log(title));
-
-//LogFirstAvailable();
-
-// let fictionBooks = GetBookTitlesByCategory(); // no need to define the category parameter b/c the
-//                                              // function has a default value for category
-
-// fictionBooks.forEach(title => console.log(title));                                         
-
-//CreateCustomer('Michelle');
-//CreateCustomer('Leigh', 6);
-//CreateCustomer('Marie', 12, 'Atlanta');
-
-
-// let x: number;
-// x = 5; 
-
-// let IdGenerator: (chars: string, nums: number) => string;
-// IdGenerator = (name: string, id: number) => { return id + name }; 
-
-// let myID: string = IdGenerator('daniel', 20);
-// console.log(myID);
-
-
-
-// const fictionBooks = GetBookTitlesByCategory(Category.Fiction); 
-// fictionBooks.forEach((val, idx, arr) => console.log(++idx + ' - ' + val));
+PrintBook(myBook); // eventhough we declare myBook to be of type Book we can 
+                   // still pass it to the PrintBook function b/c it has 
+                   // all the attributes of the Book interface (i.e. Duck typing)
