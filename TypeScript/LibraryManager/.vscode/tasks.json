@@ -6,6 +6,7 @@
     "isShellCommand": true,
     "args": ["--target", "ES5", 
             "--outDir", "js", 
+            "--module", "commonjs", // commonjs modules are popular with nodejs devs.
             "--sourceMap", 
             "--watch",
             "app.ts"],
