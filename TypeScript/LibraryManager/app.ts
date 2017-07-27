@@ -127,11 +127,9 @@ let myBook = {
     title: 'Pride and Prejudice',
     author: 'Janes Austen',
     available: true,
-    category: Category.Fiction, 
-    year: 1813,
-    copies: 3
+    category: Category.Fiction,
+    markDamaged: (reason: string) => console.log('Damaged: ' + reason) 
 };
 
-PrintBook(myBook); // eventhough we declare myBook to be of type Book we can 
-                   // still pass it to the PrintBook function b/c it has 
-                   // all the attributes of the Book interface (i.e. Duck typing)
+PrintBook(myBook); 
+myBook.markDamaged('missing back cover');

@@ -7,6 +7,7 @@ interface Book {
     available: boolean;
     category: Category;
     pages?: number;
+    markDamaged?: (reason: string) => void;
 }
 
 export { Book }
