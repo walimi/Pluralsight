@@ -111,6 +111,9 @@ var myBook = {
     category: enums_1.Category.Fiction,
     markDamaged: function (reason) { return console.log('Damaged: ' + reason); }
 };
-PrintBook(myBook);
-myBook.markDamaged('missing back cover');
+// PrintBook(myBook); 
+// myBook.markDamaged('torn pages');
+var logDamage;
+logDamage = function (damage) { return console.log('Damage reported:' + damage); };
+logDamage('coffee stains');
 //# sourceMappingURL=app.js.map

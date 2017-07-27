@@ -1,5 +1,5 @@
 import { Category } from './enums';
-import { Book } from './interfaces';
+import { Book, DamageLogger } from './interfaces';
 
 function GetAllBooks(): Book[] {
     let books = [
@@ -131,5 +131,9 @@ let myBook = {
     markDamaged: (reason: string) => console.log('Damaged: ' + reason) 
 };
 
-PrintBook(myBook); 
-myBook.markDamaged('missing back cover');
+// PrintBook(myBook); 
+// myBook.markDamaged('torn pages');
+
+let logDamage: DamageLogger;
+logDamage = (damage: string) => console.log('Damage reported:' + damage);
+logDamage('coffee stains');
