@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var enums_1 = require("./enums");
+var classes_1 = require("./classes");
 function GetAllBooks() {
     var books = [
         { id: 1, title: 'Kite Runner', author: 'Khaled Hosseini', available: true, category: enums_1.Category.Fiction },
@@ -116,4 +117,7 @@ function PrintBook(book) {
 // let logDamage: DamageLogger;
 // logDamage = (damage: string) => console.log('Damage reported:' + damage);
 // logDamage('coffee stains');
+var favoriteLibrarian = new classes_1.UniversityLibrarian();
+favoriteLibrarian.name = "Megan";
+favoriteLibrarian.assistCustomer("Shuana");
 //# sourceMappingURL=app.js.map
