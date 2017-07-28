@@ -17,6 +17,7 @@ var ReferenceItem = (function () {
     }
     ReferenceItem.prototype.printItem = function () {
         console.log(this.title + " was published in " + this.year); // using a back-tick for string interpolation
+        console.log("Department: " + ReferenceItem.department);
     };
     Object.defineProperty(ReferenceItem.prototype, "publisher", {
         get: function () {
@@ -30,5 +31,6 @@ var ReferenceItem = (function () {
     });
     return ReferenceItem;
 }());
+ReferenceItem.department = 'Research';
 exports.ReferenceItem = ReferenceItem;
 //# sourceMappingURL=classes.js.map
