@@ -104,6 +104,6 @@ function PrintBook(book) {
     console.log(book.title + ' by ' + book.author);
 }
 //************************************************************* */
-var ref = new classes_1.ReferenceItem('New Facts and Figures', 2010);
+var ref = new classes_1.ReferenceItem('Updated Facts and Figures', 2012);
 ref.printItem();
 //# sourceMappingURL=app.js.map

@@ -123,5 +123,5 @@ function PrintBook(book: Book): void {
 
 //************************************************************* */
 
-let ref = new ReferenceItem('New Facts and Figures', 2010);
+let ref = new ReferenceItem('Updated Facts and Figures', 2012);
 ref.printItem();
