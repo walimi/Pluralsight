@@ -104,20 +104,8 @@ function PrintBook(book) {
     console.log(book.title + ' by ' + book.author);
 }
 //************************************************************* */
-// let myBook = {
-//     id: 5,
-//     title: 'Pride and Prejudice',
-//     author: 'Janes Austen',
-//     available: true,
-//     category: Category.Fiction,
-//     markDamaged: (reason: string) => console.log('Damaged: ' + reason) 
-// };
-// // PrintBook(myBook); 
-// // myBook.markDamaged('torn pages');
-// let logDamage: DamageLogger;
-// logDamage = (damage: string) => console.log('Damage reported:' + damage);
-// logDamage('coffee stains');
-var favoriteLibrarian = new classes_1.UniversityLibrarian();
-favoriteLibrarian.name = "Megan";
-favoriteLibrarian.assistCustomer("Shuana");
+var ref = new classes_1.ReferenceItem();
+ref.title = 'Facts and Figures';
+ref.year = 2016;
+ref.printItem();
 //# sourceMappingURL=app.js.map

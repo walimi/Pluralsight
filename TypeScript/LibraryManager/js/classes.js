@@ -9,4 +9,14 @@ var UniversityLibrarian = (function () {
     return UniversityLibrarian;
 }());
 exports.UniversityLibrarian = UniversityLibrarian;
+var ReferenceItem = (function () {
+    function ReferenceItem() {
+        console.log('Creating a new ReferenceItem...');
+    }
+    ReferenceItem.prototype.printItem = function () {
+        console.log(this.title + " was published in " + this.year); // using a back-tick for string interpolation
+    };
+    return ReferenceItem;
+}());
+exports.ReferenceItem = ReferenceItem;
 //# sourceMappingURL=classes.js.map

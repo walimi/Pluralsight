@@ -1,6 +1,6 @@
 import { Category } from './enums';
 import { Book, DamageLogger, Author, Librarian } from './interfaces';
-import { UniversityLibrarian } from './classes';
+import { UniversityLibrarian, ReferenceItem } from './classes';
 
 function GetAllBooks(): Book[] {
     let books = [
@@ -123,22 +123,7 @@ function PrintBook(book: Book): void {
 
 //************************************************************* */
 
-// let myBook = {
-//     id: 5,
-//     title: 'Pride and Prejudice',
-//     author: 'Janes Austen',
-//     available: true,
-//     category: Category.Fiction,
-//     markDamaged: (reason: string) => console.log('Damaged: ' + reason) 
-// };
-
-// // PrintBook(myBook); 
-// // myBook.markDamaged('torn pages');
-
-// let logDamage: DamageLogger;
-// logDamage = (damage: string) => console.log('Damage reported:' + damage);
-// logDamage('coffee stains');
-
-let favoriteLibrarian: Librarian = new UniversityLibrarian();
-favoriteLibrarian.name = "Megan";
-favoriteLibrarian.assistCustomer("Shuana");
+let ref = new ReferenceItem();
+ref.title = 'Facts and Figures';
+ref.year = 2016;
+ref.printItem();
