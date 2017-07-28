@@ -125,3 +125,5 @@ function PrintBook(book: Book): void {
 
 let ref = new ReferenceItem('Updated Facts and Figures', 2012);
 ref.printItem();
+ref.publisher = 'Random Data Publishing';
+console.log(ref.publisher);

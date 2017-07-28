@@ -106,4 +106,6 @@ function PrintBook(book) {
 //************************************************************* */
 var ref = new classes_1.ReferenceItem('Updated Facts and Figures', 2012);
 ref.printItem();
+ref.publisher = 'Random Data Publishing';
+console.log(ref.publisher);
 //# sourceMappingURL=app.js.map
