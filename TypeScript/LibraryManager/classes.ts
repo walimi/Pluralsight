@@ -13,10 +13,12 @@ class UniversityLibrarian implements Librarian {
 
 class ReferenceItem {
     title: string;
-    year: number;
+    private year: number;
 
-    constructor() {
+    constructor(newTitle: string, newYear: number) {
         console.log('Creating a new ReferenceItem...');
+        this.title = newTitle;
+        this.year = newYear;
     }
 
     printItem(): void {

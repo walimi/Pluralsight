@@ -10,8 +10,10 @@ var UniversityLibrarian = (function () {
 }());
 exports.UniversityLibrarian = UniversityLibrarian;
 var ReferenceItem = (function () {
-    function ReferenceItem() {
+    function ReferenceItem(newTitle, newYear) {
         console.log('Creating a new ReferenceItem...');
+        this.title = newTitle;
+        this.year = newYear;
     }
     ReferenceItem.prototype.printItem = function () {
         console.log(this.title + " was published in " + this.year); // using a back-tick for string interpolation
