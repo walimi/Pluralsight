@@ -109,5 +109,5 @@ function PrintBook(book) {
 // ref.publisher = 'Random Data Publishing';
 // console.log(ref.publisher);
 var refBook = new classes_1.Encyclopedia('WorldPedia', 1900, 10);
-refBook.printItem();
+refBook.printCitation();
 //# sourceMappingURL=app.js.map
