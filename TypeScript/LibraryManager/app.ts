@@ -139,3 +139,11 @@ let Newspaper = class extends ReferenceItem {
 
 let myPaper = new Newspaper('The Gazette', 2016);
 myPaper.printCitation();
+
+class Novel extends class {title: string} {
+    mainCharacter: string;
+}
+
+let favoriteNovel = new Novel();
+favoriteNovel.title = "Kite Runner";
+favoriteNovel.mainCharacter = "Khaled";

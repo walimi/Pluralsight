@@ -132,4 +132,18 @@ var Newspaper = (function (_super) {
 }(classes_1.ReferenceItem));
 var myPaper = new Newspaper('The Gazette', 2016);
 myPaper.printCitation();
+var Novel = (function (_super) {
+    __extends(Novel, _super);
+    function Novel() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return Novel;
+}((function () {
+    function class_2() {
+    }
+    return class_2;
+}())));
+var favoriteNovel = new Novel();
+favoriteNovel.title = "Kite Runner";
+favoriteNovel.mainCharacter = "Khaled";
 //# sourceMappingURL=app.js.map
