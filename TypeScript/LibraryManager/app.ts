@@ -128,5 +128,14 @@ function PrintBook(book: Book): void {
 // ref.publisher = 'Random Data Publishing';
 // console.log(ref.publisher);
 
-let refBook: ReferenceItem = new Encyclopedia('WorldPedia', 1900, 10);
-refBook.printCitation();
+// let refBook: ReferenceItem = new Encyclopedia('WorldPedia', 1900, 10);
+// refBook.printCitation();
+
+let Newspaper = class extends ReferenceItem {
+    printCitation(): void {
+        console.log(`Newspaper: ${this.title}`);
+    }
+}
+
+let myPaper = new Newspaper('The Gazette', 2016);
+myPaper.printCitation();
