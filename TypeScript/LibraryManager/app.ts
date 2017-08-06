@@ -1,6 +1,11 @@
 import { Category } from './enums';
 import { Book, DamageLogger, Author, Librarian } from './interfaces';
 import { UniversityLibrarian, ReferenceItem, Encyclopedia } from './classes';
+import { CalculateLateFee as CalcFee, MaxBooksAllowed} from './lib/utilityFunctions';
+
+
+let fee = CalcFee(10);
+let max = MaxBooksAllowed(38);
 
 function GetAllBooks(): Book[] {
     let books = [

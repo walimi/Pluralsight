@@ -12,6 +12,9 @@ var __extends = (this && this.__extends) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var enums_1 = require("./enums");
 var classes_1 = require("./classes");
+var utilityFunctions_1 = require("./lib/utilityFunctions");
+var fee = utilityFunctions_1.CalculateLateFee(10);
+var max = utilityFunctions_1.MaxBooksAllowed(38);
 function GetAllBooks() {
     var books = [
         { id: 1, title: 'Kite Runner', author: 'Khaled Hosseini', available: true, category: enums_1.Category.Fiction },
