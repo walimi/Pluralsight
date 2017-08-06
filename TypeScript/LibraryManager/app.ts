@@ -1,8 +1,10 @@
 import { Category } from './enums';
 import { Book, Logger, Author, Librarian } from './interfaces';
-import { UniversityLibrarian, ReferenceItem, Encyclopedia } from './classes';
+import { UniversityLibrarian, ReferenceItem } from './classes';
 import { CalculateLateFee as CalcFee, MaxBooksAllowed} from './lib/utilityFunctions';
+import refBook from './encyclopedia';
 
+//let reference = new refBook('Fact Book', 2016, 1);
 
 let fee = CalcFee(10);
 let max = MaxBooksAllowed(38);

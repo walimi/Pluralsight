@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var enums_1 = require("./enums");
 var classes_1 = require("./classes");
 var utilityFunctions_1 = require("./lib/utilityFunctions");
+//let reference = new refBook('Fact Book', 2016, 1);
 var fee = utilityFunctions_1.CalculateLateFee(10);
 var max = utilityFunctions_1.MaxBooksAllowed(38);
 function GetAllBooks() {
