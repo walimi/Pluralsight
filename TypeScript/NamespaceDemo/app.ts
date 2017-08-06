@@ -1,4 +1,6 @@
 /// <reference path="utilityFunctions.ts" />
 
-let fee = Utility.Fees.CalculateLateFee(10);
+import util = Utility.Fees;
+
+let fee = util.CalculateLateFee(10);
 console.log(`Fee: ${fee}`);
