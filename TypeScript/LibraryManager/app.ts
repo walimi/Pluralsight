@@ -1,10 +1,8 @@
 import { Category } from './enums';
 import { Book, Logger, Author, Librarian } from './interfaces';
 import { UniversityLibrarian, ReferenceItem } from './classes';
-import { CalculateLateFee as CalcFee, MaxBooksAllowed} from './lib/utilityFunctions';
+import { CalculateLateFee as CalcFee, MaxBooksAllowed, Purge } from './lib/utilityFunctions';
 import refBook from './encyclopedia';
-
-//let reference = new refBook('Fact Book', 2016, 1);
 
 let fee = CalcFee(10);
 let max = MaxBooksAllowed(38);
@@ -130,27 +128,15 @@ function PrintBook(book: Book): void {
 
 //************************************************************* */
 
-// let ref = new ReferenceItem('Updated Facts and Figures', 2012);
-// ref.printItem();
-// ref.publisher = 'Random Data Publishing';
-// console.log(ref.publisher);
+let inventory: Array<Book> = [
+    {id: 10, title: 'The C Programming Language', author: 'K & R', available: true, category: Category.Software },
+    {id: 11, title: 'Code Complete', author: 'Steve McConnell', available: true, category: Category.Software },
+    {id: 12, title: '8-bit Graphics with Cobol', author: 'A. B.', available: true, category: Category.Software },
+    {id: 13, title: 'Cool autoexec.bat scripts', author: 'C. D.', available: true, category: Category.Software }
+];
 
-// let refBook: ReferenceItem = new Encyclopedia('WorldPedia', 1900, 10);
-// refBook.printCitation();
+let purgedBooks: Array<Book> = Purge<Book>(inventory);
+purgedBooks.forEach(book => console.log(book.title));
 
-let Newspaper = class extends ReferenceItem {
-    printCitation(): void {
-        console.log(`Newspaper: ${this.title}`);
-    }
-}
-
-let myPaper = new Newspaper('The Gazette', 2016);
-myPaper.printCitation();
-
-class Novel extends class {title: string} {
-    mainCharacter: string;
-}
-
-let favoriteNovel = new Novel();
-favoriteNovel.title = "Kite Runner";
-favoriteNovel.mainCharacter = "Khaled";
+let purgedNums: Array<number> = Purge<number>([1, 2, 3, 4]);
+console.log(purgedNums);

@@ -1,19 +1,7 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
 var enums_1 = require("./enums");
-var classes_1 = require("./classes");
 var utilityFunctions_1 = require("./lib/utilityFunctions");
-//let reference = new refBook('Fact Book', 2016, 1);
 var fee = utilityFunctions_1.CalculateLateFee(10);
 var max = utilityFunctions_1.MaxBooksAllowed(38);
 function GetAllBooks() {
@@ -118,36 +106,14 @@ function PrintBook(book) {
     console.log(book.title + ' by ' + book.author);
 }
 //************************************************************* */
-// let ref = new ReferenceItem('Updated Facts and Figures', 2012);
-// ref.printItem();
-// ref.publisher = 'Random Data Publishing';
-// console.log(ref.publisher);
-// let refBook: ReferenceItem = new Encyclopedia('WorldPedia', 1900, 10);
-// refBook.printCitation();
-var Newspaper = (function (_super) {
-    __extends(class_1, _super);
-    function class_1() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    class_1.prototype.printCitation = function () {
-        console.log("Newspaper: " + this.title);
-    };
-    return class_1;
-}(classes_1.ReferenceItem));
-var myPaper = new Newspaper('The Gazette', 2016);
-myPaper.printCitation();
-var Novel = (function (_super) {
-    __extends(Novel, _super);
-    function Novel() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return Novel;
-}((function () {
-    function class_2() {
-    }
-    return class_2;
-}())));
-var favoriteNovel = new Novel();
-favoriteNovel.title = "Kite Runner";
-favoriteNovel.mainCharacter = "Khaled";
+var inventory = [
+    { id: 10, title: 'The C Programming Language', author: 'K & R', available: true, category: enums_1.Category.Software },
+    { id: 11, title: 'Code Complete', author: 'Steve McConnell', available: true, category: enums_1.Category.Software },
+    { id: 12, title: '8-bit Graphics with Cobol', author: 'A. B.', available: true, category: enums_1.Category.Software },
+    { id: 13, title: 'Cool autoexec.bat scripts', author: 'C. D.', available: true, category: enums_1.Category.Software }
+];
+var purgedBooks = utilityFunctions_1.Purge(inventory);
+purgedBooks.forEach(function (book) { return console.log(book.title); });
+var purgedNums = utilityFunctions_1.Purge([1, 2, 3, 4]);
+console.log(purgedNums);
 //# sourceMappingURL=app.js.map
