@@ -125,6 +125,12 @@ var magazines = [
 var magazineShelf = new shelf_1.default();
 magazines.forEach(function (mag) { return magazineShelf.add(mag); });
 var firstMagazine = magazineShelf.getFirst();
-var numberShelf = new shelf_1.default();
-[5, 10, 15].forEach(function (num) { return numberShelf.add(num); });
+// nubmer type doesn't have a title property so this code
+// doesn't compile anymore
+// let numberShelf: Shelf<number> = new Shelf<number>();
+// [5, 10, 15].forEach(num => numberShelf.add(num));
+// let's try the new functions we added
+magazineShelf.printTitles();
+var softwareBook = bookShelf.find('Code Complete');
+console.log(softwareBook.title + " (" + softwareBook.author + ")");
 //# sourceMappingURL=app.js.map

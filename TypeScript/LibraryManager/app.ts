@@ -153,5 +153,13 @@ let magazineShelf: Shelf<Magazine> = new Shelf<Magazine>();
 magazines.forEach(mag => magazineShelf.add(mag));
 let firstMagazine: Magazine = magazineShelf.getFirst();
 
-let numberShelf: Shelf<number> = new Shelf<number>();
-[5, 10, 15].forEach(num => numberShelf.add(num));
+// nubmer type doesn't have a title property so this code
+// doesn't compile anymore
+// let numberShelf: Shelf<number> = new Shelf<number>();
+// [5, 10, 15].forEach(num => numberShelf.add(num));
+
+// let's try the new functions we added
+magazineShelf.printTitles();
+
+let softwareBook = bookShelf.find('Code Complete');
+console.log(`${softwareBook.title} (${softwareBook.author})`);

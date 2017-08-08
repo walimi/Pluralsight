@@ -1,4 +1,8 @@
-export default class Shelf<T> {
+interface ShelfItem {
+    title: string;
+}
+
+export default class Shelf<T extends ShelfItem> {
     private _items: Array<T> = new Array<T>();
 
     add(item: T): void {
@@ -10,9 +14,9 @@ export default class Shelf<T> {
     }
 
     find(title: string): T {
-        // the following line results in compiler error b/c
-        // currenty T can be any type (i.e., there are no constraints 
-        // on T)
+       
+        // now that we have added a constraint to the type T
+        // (i.e., ShelfItem) we no longer see the error
         return this._items.filter(item => item.title === title)[0];
     }
 

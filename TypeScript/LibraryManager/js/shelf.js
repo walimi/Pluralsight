@@ -11,9 +11,8 @@ var Shelf = (function () {
         return this._items[0];
     };
     Shelf.prototype.find = function (title) {
-        // the following line results in compiler error b/c
-        // currenty T can be any type (i.e., there are no constraints 
-        // on T)
+        // now that we have added a constraint to the type T
+        // (i.e., ShelfItem) we no longer see the error
         return this._items.filter(function (item) { return item.title === title; })[0];
     };
     Shelf.prototype.printTitles = function () {
