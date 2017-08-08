@@ -1,9 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var enums_1 = require("./enums");
-var utilityFunctions_1 = require("./lib/utilityFunctions");
-var fee = utilityFunctions_1.CalculateLateFee(10);
-var max = utilityFunctions_1.MaxBooksAllowed(38);
+var shelf_1 = require("./shelf");
 function GetAllBooks() {
     var books = [
         { id: 1, title: 'Kite Runner', author: 'Khaled Hosseini', available: true, category: enums_1.Category.Fiction },
@@ -112,8 +110,21 @@ var inventory = [
     { id: 12, title: '8-bit Graphics with Cobol', author: 'A. B.', available: true, category: enums_1.Category.Software },
     { id: 13, title: 'Cool autoexec.bat scripts', author: 'C. D.', available: true, category: enums_1.Category.Software }
 ];
-var purgedBooks = utilityFunctions_1.Purge(inventory);
-purgedBooks.forEach(function (book) { return console.log(book.title); });
-var purgedNums = utilityFunctions_1.Purge([1, 2, 3, 4]);
-console.log(purgedNums);
+// let purgedBooks: Array<Book> = Purge<Book>(inventory);
+// purgedBooks.forEach(book => console.log(book.title));
+// let purgedNums: Array<number> = Purge<number>([1, 2, 3, 4]);
+// console.log(purgedNums);
+var bookShelf = new shelf_1.default();
+inventory.forEach(function (book) { return bookShelf.add(book); });
+var firstBook = bookShelf.getFirst();
+var magazines = [
+    { title: 'Programming Language Monthly', publisher: 'Code Mags' },
+    { title: 'Literary Fiction Quarterly', publisher: 'College Press' },
+    { title: 'Five Points', publisher: 'GSU' },
+];
+var magazineShelf = new shelf_1.default();
+magazines.forEach(function (mag) { return magazineShelf.add(mag); });
+var firstMagazine = magazineShelf.getFirst();
+var numberShelf = new shelf_1.default();
+[5, 10, 15].forEach(function (num) { return numberShelf.add(num); });
 //# sourceMappingURL=app.js.map
