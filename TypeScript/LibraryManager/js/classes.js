@@ -33,4 +33,3 @@ var ReferenceItem = (function () {
 }());
 ReferenceItem.department = 'Research';
 exports.ReferenceItem = ReferenceItem;
-//# sourceMappingURL=classes.js.map

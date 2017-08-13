@@ -21,4 +21,3 @@ var Shelf = (function () {
     return Shelf;
 }());
 exports.default = Shelf;
-//# sourceMappingURL=shelf.js.map
