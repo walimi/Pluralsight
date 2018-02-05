@@ -1,16 +1,26 @@
+// The following code is from Building Offline Web Apps with Service Worker by Nik Molnar
+
 function getCurrentPositionWithPromise() {
     return new Promise(function(fulfill, reject) {
         navigator.geolocation.getCurrentPosition(fulfill,reject);
     });
 }
 
-// using arrow function
+// using functions
+getCurrentPositionWithPromise(function(r) {
+    console.log(r.coords.latitude);
+}, 
+function(r) {
+    console.error(r.message);
+});
+
+// using arrow functions (arrow functions are supported whereever Promises are supported)
 getCurrentPositionWithPromise()
     .then(r => console.log(r.coords.latitutde))
     .catch(r => console.error(r.message));
 
 
-// using async/await 
+// using async/await (using ES6 syntax. requires transpiling with Babel, etc.)
 async function main() {    
     try {
         var p = await getCurrentPositionWithPromise();
