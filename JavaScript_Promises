@@ -1,0 +1,23 @@
+function getCurrentPositionWithPromise() {
+    return new Promise(function(fulfill, reject) {
+        navigator.geolocation.getCurrentPosition(fulfill,reject);
+    });
+}
+
+// using arrow function
+getCurrentPositionWithPromise()
+    .then(r => console.log(r.coords.latitutde))
+    .catch(r => console.error(r.message));
+
+
+// using async/await 
+async function main() {    
+    try {
+        var p = await getCurrentPositionWithPromise();
+        console.info(p.coords.latitutde);
+    } catch (e) {
+        console.error(e.message);
+    }
+}
+
+main();
